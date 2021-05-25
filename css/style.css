@@ -33,7 +33,7 @@ video { border: 3px solid black; }
 .hide-overflow { overflow: hidden !important; }
 .toast { background-color: rgb(6, 167, 99); }
 .card { position: relative; background-color: rgb(245, 245, 245); transition: box-shadow 0.25s ease 0s; margin: 8px 0px; border-radius: 0px !important; }
-.card .card-content { padding: 40px; border-radius: 0px 0px 2px 2px; }
+.card .card-content { padding: 42px; border-radius: 0px 0px 2px 2px; }
 .card .card-content p { margin: 0px; color: inherit; text-align: center; }
 .modal { padding-right: 0px !important; padding-left: 0px !important; }
 .modal .modal-content { background-color: rgb(245, 245, 245); color: rgb(97, 97, 97); border-radius: 0px !important; }
@@ -482,3 +482,4 @@ footer { width: 100%; height: auto; color: rgb(245, 245, 245); margin-top: -18px
 .single-page a { color: rgb(245, 245, 245); }
 hr { border-top: 1px solid rgb(245, 245, 245); }
 .single-footer { margin: 0px; }
+.list li { list-style-type: square; }

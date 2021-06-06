@@ -148,15 +148,12 @@
                             <a href="https://www.facebook.com/profile.php?id=100004067478544" id="first_one"
                                class="social btn-floating indigo"><i
                                     class="fa fa-facebook"></i></a>
-                            <!-- TWITTER-->
-                            <a href="#" class="social  btn-floating blue"><i
-                                    class="fa fa-twitter"></i></a>
-                            <!-- GOOGLE+-->
-                            <a href="#" class="social  btn-floating red"><i
-                                    class="fa fa-google-plus"></i></a>
                             <!-- LINKEDIN-->
-                            <a href="#" class="social  btn-floating blue darken-3"><i
-                                    class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/hanguyen1997" class="social  btn-floating black darken-3"><i
+                                    class="fa fa-github"></i></a>
+                                    <!-- LINKEDIN-->
+                            <a href="https://www.instagram.com/t.b.h.nguyen/" class="social  btn-floating instagram darken-3"><i
+                                    class="fa fa-instagram"></i></a>
                         </div>
                     </div>
                     <!--HTML 5 VIDEO-->
@@ -202,9 +199,15 @@
                     <div id="about-btn" class="card-action">
                         <div class="about-btn">
                             <!-- DOWNLOAD CV BUTTON -->
-                            <a href="cv/cv_truongbahanguyen.pdf" class="btn waves-effect" download="">Download CV</a>
+                            <a onclick="download_cv()" class="btn waves-effect" download="">Download CV</a>
                             <!-- CONTACT BUTTON -->
                             <a href="#contact" class="btn waves-effect">Contact Me</a>
+                            <div class="cv" id="download_cv">
+                                <div class="cv_img">
+                                <a href="cv/cv_truongbahanguyen.pdf"><img src="images/icons/vie.png"></a>
+                                <img src="images/icons/usa.png">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -654,84 +657,131 @@
     </div>
 </section>
 <!--==========================================
-                  PORTFOLIOS
+                  My projects
 ===========================================-->
 <section id="portfolios" class="section">
     <div class="container">
         <!-- SECTION TITLE -->
         <div class="section-title">
-            <h4 class="text-uppercase text-center"><img src="images/icons/safe.png" alt="demo">Portfolios</h4>
+            <h4 class="text-uppercase text-center"><img src="images/icons/safe.png" alt="demo">My projects</h4>
         </div>
         <div id="portfolios-card" class="row">
-
             <!--OPTIONS-->
             <ul class="nav nav-tabs">
                 <!--ALL CATEGORIES-->
                 <li class="active waves-effect list-shuffle"><a id="all-sample" class="active" href="#all" data-toggle="tab">ALL</a>
                 
                 <!--CATEGORIES-->
-                <li class="waves-effect list-shuffle"><a class="cate" href="#a" data-toggle="tab">WEBSITES</a></li>
-                <li class="waves-effect list-shuffle"><a class="cate" href="#b" data-toggle="tab">WEBAPP</a></li>
+                <li class="waves-effect list-shuffle"><a class="cate" href="#a" data-toggle="tab">Web-app</a></li>
+                <li class="waves-effect list-shuffle"><a class="cate" href="#b" data-toggle="tab">Web-sites</a></li>
             </ul>
-
             <!--CATEGORIES CONTENT-->
             <div class="tab-content">
-
                 <!--All CATEGORIES-->
                 <div id="all"></div>
-
                 <!--CATEGORY 1-->
-                <div id="a">
-                    <!--CATEGORY CONTENT TWO SMALL-->
-                    <div class="col-md-4 col-sm-6 col-xs-12 grid inRight">
-                        <figure class="port-effect-scale">
-                            <img src="images/products/eescons.vn_.png" class="img-responsive" alt="portfolio-demo"/>
-                            <figcaption>
-                                <h2>EES CONSTRUCTION COMPANY LIMITED(EES CONS)</h2>
-                                <p>I designed this for a client for his company.</p>
-                                <a class="popup-image" href="images/products/eescons.vn_.png">View more</a>
-                            </figcaption>
-                        </figure>
+                <div id="a"> 
+                    <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="mobile apps" style="display: flex;margin-top: 20px;">
+                        <div class="col-md-6 col-lg-5 project-card__img">
+                          <img class="" src="images/products/101987411-7e97c980-3cc6-11eb-8712-ef9b1a9dafa0.gif" alt="project-img">
+                        </div>
+                        <div class="col-md-6 col-lg-7 project-card__info">
+                          <h3 class="project-card__title">Web app page for music play</h3>
+                          <p class="project-card__description">
+                            This is a personal project built in my spare time for learning purposes. 📻 Music Player made with html, css, Javascript, get API soundcloud
+                          </p>
+                          <p class="project-card__stack">Used stack:</p>
+                          <ul class="tags">
+                            <li>html</li>
+                            <li>css</li>
+                            <li>JavaScript</li>
+                            <li>api</li>
+                          </ul>
+                          <a href="https://hanguyen1997.github.io/Music-Player/" class="project-card__link">hanguyen1997.github.io/Music-Player</a>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 grid big inLeft">
-                        <figure class="port-effect-scale">
-                            <img src="images/products/101987411-7e97c980-3cc6-11eb-8712-ef9b1a9dafa0.gif" class="img-responsive" alt="portfolio-demo"/>
-                            <figcaption>
-                                <h2>Lightbox <span> WEBAPP </span></h2>
-                                <p>Two Hover Effect For Portfolio Grid Blocks. Its Scale</p>
-                                <a href="images/products/101987411-7e97c980-3cc6-11eb-8712-ef9b1a9dafa0.gif" class="popup-image" data-effect="mfp-3d-unfold">View
-                                    more</a>
-                            </figcaption>
-                        </figure>
+                    <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="mobile apps" style="display: flex;">
+                        <div class="col-md-6 col-lg-5 project-card__img">
+                          <img class="" src="images/products/2021-05-25_153108.png" alt="project-img">
+                        </div>
+                        <div class="col-md-6 col-lg-7 project-card__info">
+                          <h3 class="project-card__title">Web app page for music play</h3>
+                          <p class="project-card__description">
+                            This is a personal project built in my spare time for learning purposes. 🌨️ Weather app made with html, css, Javascript, get API openweathermap
+                          </p>
+                          <p class="project-card__stack">Used stack:</p>
+                          <ul class="tags">
+                            <li>html</li>
+                            <li>css</li>
+                            <li>JavaScript</li>
+                            <li>api</li>
+                          </ul>
+                          <a href="https://hanguyen1997.github.io/weather-app/" class="project-card__link">hanguyen1997.github.io/weather-app</a>
+                        </div>
+                    </div>
+                    <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="mobile apps" style="display: flex;">
+                        <div class="col-md-6 col-lg-5 project-card__img">
+                          <img class="" src="images/products/100582163-66fe2f80-331b-11eb-834f-de7d0d3dc755.gif" alt="project-img">
+                        </div>
+                        <div class="col-md-6 col-lg-7 project-card__info">
+                          <h3 class="project-card__title">Web app nature sound effects</h3>
+                          <p class="project-card__description">
+                            This is a personal project built in my spare time for learning purposes. 🎵 Web app nature sound effects made with html, css, Javascript.
+                          </p>
+                          <p class="project-card__stack">Used stack:</p>
+                          <ul class="tags">
+                            <li>html</li>
+                            <li>css</li>
+                            <li>JavaScript</li>
+                          </ul>
+                          <a href="https://testaudioapp.000webhostapp.com/" class="project-card__link">testaudioapp.000webhostapp.com/</a>
+                        </div>
                     </div>
                 </div>
-
                 <!--CATEGORY 2-->
                 <div id="b">
-                    <!--CATEGORY CONTENT ONE BIG-->
-                    <div class="col-md-4 col-sm-12 col-xs-12 grid big inLeft">
-                        <figure class="port-effect-scale">
-                            <img src="images/products/2021-05-25_153108.png" class="img-responsive" alt="portfolio-demo"/>
-                            <figcaption>
-                                <h2>Lightbox <span> WEBAPP </span></h2>
-                                <p>Two Hover Effect For Portfolio Grid Blocks. Its Scale</p>
-                                <a href="images/products/2021-05-25_153108.png" class="popup-image" data-effect="mfp-3d-unfold">View
-                                    more</a>
-                            </figcaption>
-                        </figure>
+                    <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="mobile apps" style="display: flex;">
+                        <div class="col-md-6 col-lg-5 project-card__img">
+                          <img class="" src="images/products/eescons.vn_.png" alt="project-img">
+                        </div>
+                        <div class="col-md-6 col-lg-7 project-card__info">
+                          <h3 class="project-card__title">Web site ees costruction company</h3>
+                          <p class="project-card__description">
+                            This is a company introduction website. 
+                          </p>
+                          <p class="project-card__stack">Used stack:</p>
+                          <ul class="tags">
+                            <li>html</li>
+                            <li>css</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>jquery</li>
+                            <li>mysql</li>
+                          </ul>
+                          <a href="http://eescons.vn/" class="project-card__link">eescons.vn</a>
+                        </div>
                     </div>
-
-                    <!--CATEGORY CONTENT THREE SMALL-->
-                    <div class="col-md-4 col-sm-12 col-xs-12 grid big inLeft">
-                        <figure class="port-effect-scale">
-                            <img src="images/products/101987411-7e97c980-3cc6-11eb-8712-ef9b1a9dafa0.gif" class="img-responsive" alt="portfolio-demo"/>
-                            <figcaption>
-                                <h2>Lightbox <span> WEBAPP </span></h2>
-                                <p>Two Hover Effect For Portfolio Grid Blocks. Its Scale</p>
-                                <a href="images/products/101987411-7e97c980-3cc6-11eb-8712-ef9b1a9dafa0.gif" class="popup-image" data-effect="mfp-3d-unfold">View
-                                    more</a>
-                            </figcaption>
-                        </figure>
+                    <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="mobile apps" style="display: flex;">
+                        <div class="col-md-6 col-lg-5 project-card__img">
+                          <img class="" src="images/products/bikerental.png" alt="project-img">
+                        </div>
+                        <div class="col-md-6 col-lg-7 project-card__info">
+                          <h3 class="project-card__title">Web site hondago-bikerental (Japan)</h3>
+                          <p class="project-card__description">
+                            This is a Honda car rental website in Japan.
+                          </p>
+                          <p class="project-card__stack">Used stack:</p>
+                          <ul class="tags">
+                            <li>html</li>
+                            <li>css</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>Fuelphp</li>
+                            <li>jquery</li>
+                            <li>mysql</li>
+                          </ul>
+                          <a href="https://hondago-bikerental.jp/" class="project-card__link">hondago-bikerental.jp</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -850,7 +900,7 @@
                             </div>
                             <!-- SEND BUTTON -->
                             <div class="contact-send">
-                                <button id="submit" name="contactSubmit" type="submit" value="Submit"
+                                <button id="send_mail" name="contactSubmit" type="submit" value="Submit"
                                         class="btn waves-effect">Send
                                 </button>
                             </div>
@@ -905,7 +955,6 @@
 <script src="javascript/vendors/materialize.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI14J_PNWVd-m0gnUBkjmhoQyNyd7nllA"></script>
 <script src="javascript/vendors/markerwithlabel.min.js"></script>
-<script src="javascript/vendors/retina.min.js"></script>
 <script src="javascript/vendors/scrollreveal.min.js"></script>
 <script src="javascript/vendors/swiper.jquery.min.js"></script>
 <script src="javascript/vendors/jquery.magnific-popup.min.js"></script>

@@ -148,15 +148,12 @@
                             <a href="https://www.facebook.com/profile.php?id=100004067478544" id="first_one"
                                class="social btn-floating indigo"><i
                                     class="fa fa-facebook"></i></a>
-                            <!-- TWITTER-->
-                            <a href="#" class="social  btn-floating blue"><i
-                                    class="fa fa-twitter"></i></a>
-                            <!-- GOOGLE+-->
-                            <a href="#" class="social  btn-floating red"><i
-                                    class="fa fa-google-plus"></i></a>
                             <!-- LINKEDIN-->
-                            <a href="#" class="social  btn-floating blue darken-3"><i
-                                    class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/hanguyen1997" class="social  btn-floating black darken-3"><i
+                                    class="fa fa-github"></i></a>
+                                    <!-- LINKEDIN-->
+                            <a href="https://www.instagram.com/t.b.h.nguyen/" class="social  btn-floating instagram darken-3"><i
+                                    class="fa fa-instagram"></i></a>
                         </div>
                     </div>
                     <!--HTML 5 VIDEO-->
@@ -202,9 +199,15 @@
                     <div id="about-btn" class="card-action">
                         <div class="about-btn">
                             <!-- DOWNLOAD CV BUTTON -->
-                            <!-- <a href="cv/cv_truongbahanguyen.pdf" class="btn waves-effect" download="">Download CV</a> -->
+                            <!-- <a onclick="download_cv()" class="btn waves-effect" download="">Download CV</a> -->
                             <!-- CONTACT BUTTON -->
                             <a href="#contact" class="btn waves-effect">Contact Me</a>
+                            <div class="cv" id="download_cv">
+                                <div class="cv_img">
+                                <a href="cv/cv_truongbahanguyen_vie.pdf"><img src="images/icons/vie.png"></a>
+                                <img src="images/icons/usa.png">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -249,10 +252,7 @@
                             I completed my elementary education from this school.
                             I have successfully completed all the courses
                         </p>
-                        <!-- BUTTON TRIGGER MODAL -->
-                        <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-1">
-                            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                        </a>
+
                     </div>
                 </div>
             </div>
@@ -470,8 +470,7 @@
                         </div>
                         <!-- TIMELINE PARAGRAPH -->
                         <p>
-                            I started my frontend carrier here, spent tow years learning and working
-                            in various frontend aspects. I worked on about 40+ projects local and online.
+                            I work in a backend PHP web.
                         </p>
 
                     </div>
@@ -486,43 +485,6 @@
                   MODALS
 ===========================================-->
 <section>
-    <!--MODAL ONE-->
-    <div class="modal fade" id="myModal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-1">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <!--MODAL HEADER-->
-                <div class="modal-header  text-center">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true"><i class="fa fa-close"></i></span></button>
-                    <h4 class="modal-title" id="myModalLabel-1">Tran Quang Dieu School</h4>
-                    <h6>
-                        <small>2003 - 2008</small>
-                    </h6>
-                </div>
-                <!--MODAL BODY-->
-                <div class="modal-body">
-                    <img class="img-responsive" alt="graduation" src="images/backgrounds/182206 - TQDT5 - 03.jpg">
-                    <p>
-                        I learned a lot of great things from participating in football activities. 
-                        It has changed my whole outlook and mode towards life. Before that, 
-                        I felt faint, had self-esteem, and returned to challenges like the impossible. 
-                        Football changed all these products. In the freshman's first file, the entire 
-                        team warms up with a touch football game. Players are divided and game play begins. 
-                        However, during the game, I noticed that I wasn't running as hard as I could, nor 
-                        was I trying to dodge my defender and the scheme. The fact of the matter is that 
-                        I really don't want to kick the ball. I don't want to be the one to blame if 
-                        I lose the ball and don't play well. I don't want the responsibility of helping 
-                        the team because I'm too afraid of making mistakes. That aspect of my personality 
-                        led the early ones of my elementary school life. During that time, I went to the field.
-                    </p>
-                </div>
-                <!--MODAL FOOTER-->
-                <div class="modal-footer">
-                    <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!--MODAL TWO-->
     <div class="modal fade" id="myModal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-2">
@@ -654,85 +616,130 @@
     </div>
 </section>
 <!--==========================================
-                  PORTFOLIOS
+                  My projects
 ===========================================-->
 <section id="portfolios" class="section">
     <div class="container">
         <!-- SECTION TITLE -->
         <div class="section-title">
-            <h4 class="text-uppercase text-center"><img src="images/icons/safe.png" alt="demo">Portfolios</h4>
+            <h4 class="text-uppercase text-center"><img src="images/icons/safe.png" alt="demo">My projects</h4>
         </div>
         <div id="portfolios-card" class="row">
-
             <!--OPTIONS-->
             <ul class="nav nav-tabs">
                 <!--ALL CATEGORIES-->
-                <li class="active waves-effect list-shuffle"><a id="all-sample" class="active" href="#all" data-toggle="tab">ALL</a>
-                
                 <!--CATEGORIES-->
-                <li class="waves-effect list-shuffle"><a class="cate" href="#a" data-toggle="tab">WEBSITES</a></li>
-                <li class="waves-effect list-shuffle"><a class="cate" href="#b" data-toggle="tab">WEBAPP</a></li>
+                <li class="active waves-effect list-shuffle"><a class="cate" href="#a" data-toggle="tab">Web-app</a></li>
+                <li class="waves-effect list-shuffle"><a class="cate" href="#b" data-toggle="tab">Web-sites</a></li>
             </ul>
-
             <!--CATEGORIES CONTENT-->
             <div class="tab-content">
-
                 <!--All CATEGORIES-->
                 <div id="all"></div>
-
                 <!--CATEGORY 1-->
                 <div id="a">
-                    <!--CATEGORY CONTENT TWO SMALL-->
-                    <div class="col-md-4 col-sm-6 col-xs-12 grid inRight">
-                        <figure class="port-effect-scale">
-                            <img src="images/products/eescons.vn_.png" class="img-responsive" alt="portfolio-demo"/>
-                            <figcaption>
-                                <h2>EES CONSTRUCTION COMPANY LIMITED(EES CONS)</h2>
-                                <p>I designed this for a client for his company.</p>
-                                <a class="popup-image" href="images/products/eescons.vn_.png">View more</a>
-                            </figcaption>
-                        </figure>
+                    <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="mobile apps" style="display: flex;margin-top: 20px;">
+                        <div class="col-md-6 col-lg-5 project-card__img">
+                          <img class="" src="images/products/101987411-7e97c980-3cc6-11eb-8712-ef9b1a9dafa0.gif" alt="project-img">
+                        </div>
+                        <div class="col-md-6 col-lg-7 project-card__info">
+                          <h3 class="project-card__title">Web app page for music play</h3>
+                          <p class="project-card__description">
+                            This is a personal project built in my spare time for learning purposes. 📻 Music Player made with html, css, Javascript, get API soundcloud
+                          </p>
+                          <p class="project-card__stack">Used stack:</p>
+                          <ul class="tags">
+                            <li>html</li>
+                            <li>css</li>
+                            <li>JavaScript</li>
+                            <li>api</li>
+                          </ul>
+                          <a href="https://hanguyen1997.github.io/Music-Player/" class="project-card__link">hanguyen1997.github.io/Music-Player</a>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 grid big inLeft">
-                        <figure class="port-effect-scale">
-                            <img src="images/products/101987411-7e97c980-3cc6-11eb-8712-ef9b1a9dafa0.gif" class="img-responsive" alt="portfolio-demo"/>
-                            <figcaption>
-                                <h2>Lightbox <span> WEBAPP </span></h2>
-                                <p>Two Hover Effect For Portfolio Grid Blocks. Its Scale</p>
-                                <a href="images/products/101987411-7e97c980-3cc6-11eb-8712-ef9b1a9dafa0.gif" class="popup-image" data-effect="mfp-3d-unfold">View
-                                    more</a>
-                            </figcaption>
-                        </figure>
+                    <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="mobile apps" style="display: flex;">
+                        <div class="col-md-6 col-lg-5 project-card__img">
+                          <img class="" src="images/products/2021-05-25_153108.png" alt="project-img">
+                        </div>
+                        <div class="col-md-6 col-lg-7 project-card__info">
+                          <h3 class="project-card__title">Web app page for weather</h3>
+                          <p class="project-card__description">
+                            This is a personal project built in my spare time for learning purposes. 🌨️ Weather app made with html, css, Javascript, get API openweathermap
+                          </p>
+                          <p class="project-card__stack">Used stack:</p>
+                          <ul class="tags">
+                            <li>html</li>
+                            <li>css</li>
+                            <li>JavaScript</li>
+                            <li>api</li>
+                          </ul>
+                          <a href="https://hanguyen1997.github.io/weather-app/" class="project-card__link">hanguyen1997.github.io/weather-app</a>
+                        </div>
+                    </div>
+                    <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="mobile apps" style="display: flex;">
+                        <div class="col-md-6 col-lg-5 project-card__img">
+                          <img class="" src="images/products/100582163-66fe2f80-331b-11eb-834f-de7d0d3dc755.gif" alt="project-img">
+                        </div>
+                        <div class="col-md-6 col-lg-7 project-card__info">
+                          <h3 class="project-card__title">Web app nature sound effects</h3>
+                          <p class="project-card__description">
+                            This is a personal project built in my spare time for learning purposes. 🎵 Web app nature sound effects made with html, css, Javascript.
+                          </p>
+                          <p class="project-card__stack">Used stack:</p>
+                          <ul class="tags">
+                            <li>html</li>
+                            <li>css</li>
+                            <li>JavaScript</li>
+                          </ul>
+                          <a href="https://testaudioapp.000webhostapp.com/" class="project-card__link">testaudioapp.000webhostapp.com/</a>
+                        </div>
                     </div>
                 </div>
-
                 <!--CATEGORY 2-->
                 <div id="b">
-                    <!--CATEGORY CONTENT ONE BIG-->
-                    <div class="col-md-4 col-sm-12 col-xs-12 grid big inLeft">
-                        <figure class="port-effect-scale">
-                            <img src="images/products/2021-05-25_153108.png" class="img-responsive" alt="portfolio-demo"/>
-                            <figcaption>
-                                <h2>Lightbox <span> WEBAPP </span></h2>
-                                <p>Two Hover Effect For Portfolio Grid Blocks. Its Scale</p>
-                                <a href="images/products/2021-05-25_153108.png" class="popup-image" data-effect="mfp-3d-unfold">View
-                                    more</a>
-                            </figcaption>
-                        </figure>
+                    <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="mobile apps" style="display: flex;">
+                        <div class="col-md-6 col-lg-5 project-card__img">
+                          <img class="" src="images/products/eescons.vn_.png" alt="project-img">
+                        </div>
+                        <div class="col-md-6 col-lg-7 project-card__info">
+                          <h3 class="project-card__title">Web site ees costruction company</h3>
+                          <p class="project-card__description">
+                            This is a company introduction website.
+                          </p>
+                          <p class="project-card__stack">Used stack:</p>
+                          <ul class="tags">
+                            <li>html</li>
+                            <li>css</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>jquery</li>
+                            <li>mysql</li>
+                          </ul>
+                          <a href="http://eescons.vn/" class="project-card__link">eescons.vn</a>
+                        </div>
                     </div>
-
-                    <!--CATEGORY CONTENT THREE SMALL-->
-                    <div class="col-md-4 col-sm-12 col-xs-12 grid big inLeft">
-                        <figure class="port-effect-scale">
-                            <img src="images/products/101987411-7e97c980-3cc6-11eb-8712-ef9b1a9dafa0.gif" class="img-responsive" alt="portfolio-demo"/>
-                            <figcaption>
-                                <h2>Lightbox <span> WEBAPP </span></h2>
-                                <p>Two Hover Effect For Portfolio Grid Blocks. Its Scale</p>
-                                <a href="images/products/101987411-7e97c980-3cc6-11eb-8712-ef9b1a9dafa0.gif" class="popup-image" data-effect="mfp-3d-unfold">View
-                                    more</a>
-                            </figcaption>
-                        </figure>
-                    </div>
+                    <!-- <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="mobile apps" style="display: flex;">
+                        <div class="col-md-6 col-lg-5 project-card__img">
+                          <img class="" src="images/products/bikerental.png" alt="project-img">
+                        </div>
+                        <div class="col-md-6 col-lg-7 project-card__info">
+                          <h3 class="project-card__title">Web site hondago-bikerental (Japan)</h3>
+                          <p class="project-card__description">
+                            This is a Honda car rental website in Japan.
+                          </p>
+                          <p class="project-card__stack">Used stack:</p>
+                          <ul class="tags">
+                            <li>html</li>
+                            <li>css</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>Fuelphp</li>
+                            <li>jquery</li>
+                            <li>mysql</li>
+                          </ul>
+                          <a href="https://hondago-bikerental.jp/" class="project-card__link">hondago-bikerental.jp</a>
+                        </div>
+                    </div> -->
                 </div>
             </div>
             <!--PORTFOLIOS ADD GALLERY BUTTON-->
@@ -754,10 +761,7 @@
             <!--INTEREST TEXT-->
             <div class="card-content">
                 <p>
-                    First of all I love music, country music is my favorite. Love watching
-                    football, movies and playing games with my buddies. I spend quite a lot of time
-                    in traveling and photography, these keeps me fresh for working environment.
-                    
+                    I am a huge music fan, and my favorite genre is country music. Speaking of meaning, country songs are chock full of it! Whenever I listen to a country song, I can feel it doesn’t just have one meaning though. The words may mean one thing to the author but those same words might symbolize a completely different thing for someone else. This gives me even more variety while still listening to an awesome genre! In addition, I enjoy watching football, going to movies, and playing video games with my friends. I spend a lot of time traveling and photographing, which keeps me fresh for working environment.
                 </p>
             </div>
 
@@ -850,7 +854,7 @@
                             </div>
                             <!-- SEND BUTTON -->
                             <div class="contact-send">
-                                <button id="submit" name="contactSubmit" type="submit" value="Submit"
+                                <button id="send_mail" name="contactSubmit" type="submit" value="Submit"
                                         class="btn waves-effect">Send
                                 </button>
                             </div>
@@ -905,7 +909,6 @@
 <script src="javascript/vendors/materialize.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI14J_PNWVd-m0gnUBkjmhoQyNyd7nllA"></script>
 <script src="javascript/vendors/markerwithlabel.min.js"></script>
-<script src="javascript/vendors/retina.min.js"></script>
 <script src="javascript/vendors/scrollreveal.min.js"></script>
 <script src="javascript/vendors/swiper.jquery.min.js"></script>
 <script src="javascript/vendors/jquery.magnific-popup.min.js"></script>
